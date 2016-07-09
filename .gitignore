@@ -1,0 +1,42 @@
+# Created by https://www.gitignore.io/api/rails,node
+
+### Rails ###
+/log/*
+/tmp/*
+/db/*.sqlite3*
+/db/*.sqlite3-journal
+/spec/tmp
+
+# dotenv
+# TODO Comment out this rule if environment variables can be committed
+.env
+
+## Environment normalization:
+/.bundle
+/vendor/bundle
+
+# these should all be checked in to normalize the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# if using bower-rails ignore default bower_components path bower.json files
+/vendor/assets/bower_components
+*.bowerrc
+bower.json
+
+# Ignore Byebug command history file.
+.byebug_history
+
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directories
+node_modules

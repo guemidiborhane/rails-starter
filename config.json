@@ -1,0 +1,9 @@
+{
+ "publicPath": "vendor/assets",
+  "js": {
+    "outputFolder": "javascripts"
+  },
+  "css": {
+    "outputFolder": "stylesheets"
+  }
+}

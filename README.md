@@ -14,3 +14,8 @@ And if you want to use gulp for assets compilation (you should because I remove 
 ```
 npm install
 ```
+Then create `.env` file using to tweak the application's configurations
+```
+cp -v .env.example .env
+```
+

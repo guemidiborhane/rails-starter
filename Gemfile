@@ -37,6 +37,15 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
 
+  # Gems for deployement.
+  # gem 'capistrano',              require: false
+  # gem 'capistrano-rvm',          require: false
+  # gem 'capistrano-rails',        require: false
+  # gem 'capistrano-bundler',      require: false
+  # gem 'capistrano3-puma',        require: false
+  # gem 'capistrano-npm',          require: false
+  # gem 'capistrano-gulp',         require: false
+  # gem 'capistrano-dotenv-tasks', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

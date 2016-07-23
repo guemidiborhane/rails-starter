@@ -2,6 +2,8 @@ var elixir = require('laravel-elixir'),
     fs     = require('fs'),
     _      = require('underscore');
 
+require('laravel-elixir-vueify')
+
 Elixir.setDefaultsFrom = function (file) {
     let overrides;
 

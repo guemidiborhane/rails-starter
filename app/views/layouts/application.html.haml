@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv": "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %title= (yield(:title) + " &middot; ".html_safe if content_for?(:title)).to_s + 'Rails Starter'
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = yield :header
+  %body
+    = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = yield :footer

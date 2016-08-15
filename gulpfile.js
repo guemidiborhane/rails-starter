@@ -1,27 +1,20 @@
-var elixir = require('laravel-elixir'),
-    fs     = require('fs'),
-    _      = require('underscore');
+const elixir = require('laravel-elixir');
 
-require('laravel-elixir-vueify')
+require('laravel-elixir-vue');
 
-Elixir.setDefaultsFrom = function (file) {
-    let overrides;
+(file => {
+  let fs = require('fs'),
+      _  = require('underscore')
 
-    if (fs.existsSync(file)) {
-        overrides = JSON.parse(fs.readFileSync(file, 'utf8'));
+  if (fs.existsSync(file)) {
+    _.mixin({deepExtend: require('underscore-deep-extend')(_)})
+    _.deepExtend(elixir.config, JSON.parse(fs.readFileSync(file, 'utf8')))
+  }
+})('config.json')
 
-        _.mixin({
-            deepExtend: require('underscore-deep-extend')(_)
-        });
-
-        _.deepExtend(this.config, overrides);
-    }
-};
-
-Elixir.setDefaultsFrom('config.json');
-
-elixir(function(mix) {
-    mix.sass('main.scss');
-    mix.browserify('requires.js');
-    mix.coffee('main.coffee');
-});
+elixir(mix => {
+  mix.sass('bootstrap.scss')
+     .webpack('bootstrap.js')
+     .sass('app.scss')
+     .webpack('app.js')
+})

@@ -1,17 +1,20 @@
 {
+  "author": "Borhane E. Guemidi <guemidiborhane@gmail.com>",
   "private": true,
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "laravel-elixir": "^6.0.0-9",
-    "laravel-elixir-browserify-official": "^0.1.3",
-    "laravel-elixir-coffeescript": "^1.0.2",
-    "laravel-elixir-vueify": "^1.0.3",
-    "underscore-deep-extend": "^1.1.5"
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
   },
-  "dependencies": {
-    "bootstrap-sass": "^3.3.6",
-    "dotenv": "^2.0.0",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "fs": "0.0.2",
+    "gulp": "^3.9.1",
     "jquery": "^3.1.0",
+    "laravel-elixir": "^6.0.0-10",
+    "laravel-elixir-vue": "^0.1.5",
+    "laravel-elixir-webpack-official": "^1.0.2",
+    "sass-loader": "^4.0.0",
+    "underscore-deep-extend": "^1.1.5",
     "vue": "^1.0.26",
     "vue-resource": "^0.9.3"
   }

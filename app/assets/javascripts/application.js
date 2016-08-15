@@ -1,5 +1,4 @@
-//= require requires
-//= require_self
+//= require bootstrap
 //= require jquery_ujs
 //= require turbolinks
-//= require main
+//= require app

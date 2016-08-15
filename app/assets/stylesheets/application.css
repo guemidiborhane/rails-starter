@@ -1,4 +1,4 @@
 /*
- *= require_self
- *= require main
+ *= require bootstrap
+ *= require app
  */

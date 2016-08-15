@@ -18,14 +18,8 @@
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
 
-# if using bower-rails ignore default bower_components path bower.json files
-/vendor/assets/bower_components
-*.bowerrc
-bower.json
-
 # Ignore Byebug command history file.
 .byebug_history
-
 
 ### Node ###
 # Logs

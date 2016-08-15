@@ -5,5 +5,7 @@
   },
   "css": {
     "outputFolder": "stylesheets"
-  }
+  },
+  "muted": true,
+  "notifications": false
 }
